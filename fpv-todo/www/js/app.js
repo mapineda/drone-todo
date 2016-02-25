@@ -3,7 +3,7 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('starter', ['ionic', 'LocalStorageModule'])
+var app = angular.module('fpv-todo', ['ionic', 'LocalStorageModule'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -28,11 +28,12 @@ angular.module('starter', ['ionic', 'LocalStorageModule'])
 //config file for angular app
 .config(function (localStorageServiceProvider) {
     localStorageServiceProvider
-      .setPrefix('starter');
+      .setPrefix('fpv-todo');
   });
 
 //controllers
-.controller('main', function ($scope, $ionicModal, localStorageService) { //store the entities name in a variable var taskData = 'task';
+app.controller('main', function($scope, $ionicModal, localStorageService) { //store the entities name in a variable
+  var taskData = 'task';
 
   //initialize the tasks scope with empty array
   $scope.tasks = [];
