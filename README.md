@@ -36,4 +36,4 @@ Preview the application with 'ionic serve --lab'
 
 hire@marcopineda.com
 
-(Tweet)[http://twitter.com/marcoapineda13] at me and say hello!
+[Tweet](http://twitter.com/marcoapineda13) at me and say hello!
