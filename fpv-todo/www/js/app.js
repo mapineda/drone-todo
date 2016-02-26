@@ -90,7 +90,18 @@ app.controller('main', function($scope, $ionicModal, localStorageService) { //st
 
     $scope.closeTaskModal = function () {
         $scope.newTaskModal.hide();
-        
+
     };
+
+    $scope.addItem = function () {
+           //creates a new task
+           $scope.tasks.push($scope.task);
+           localStorageService.set(taskData, $scope.tasks);
+           $scope.task = {};
+
+           //close new task modal
+           $scope.newTaskModal.hide();
+
+       };
 
   });

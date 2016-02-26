@@ -35,12 +35,13 @@
       <ion-content>
         <div class="list card" ng-repeat="task in tasks track by $index">
             <div class="item item-divider">
-                <span ng-bind="task.title"></span>
+                <i class="icon ion-compose"></i>
+                <span ng-bind="task.title" class='drone-name-list'></span>
             </div>
             <div class="item item-body">
-                <strong>Title: <span ng-bind="task.title"></span></strong>
+                <strong><span ng-bind="task.content"></span></strong>
                 <p>
-                    <span ng-bind="task.content"></span>
+                    <span ng-bind="task.comment"></span>
                 </p>
             </div>
             <div class="item tabs tabs-secondary tabs-icon-left">
@@ -60,7 +61,7 @@
     <script id="new-task-modal.html" type="text/ng-template">
         <ion-modal-view>
             <ion-header-bar class="bar-assertive">
-                <h1 class="title">Create a new Task</h1>
+                <h1 class="title">Inventory</h1>
                 <button class="button button-icon" ng-click="closeTaskModal()">
                     <i class="icon ion-android-close"></i>
                 </button>
@@ -74,19 +75,14 @@
                         <label class="item item-input">
                             <textarea ng-model="task.content" rows="5" placeholder="Item"></textarea>
                         </label>
-                        <ul class="list">
-                            <li class="item item-toggle">
-                                Completed?
-                                <label class="toggle toggle-balanced">
-                                    <input type="checkbox" ng-model="task.completed">
-                                   <div class="track">
-                                        <div class="handle"></div>
-                                    </div>
-                                </label>
-                            </li>
-                        </ul>
+                        <label class="item item-input">
+                            <textarea ng-model="task.comment" rows="5" placeholder="Comment"></textarea>
+                        </label>
+                        
+                        <button type="submit" class="button button-block button-balanced">Add Item</button>
                         <button type="submit" class="button button-block button-positive">Create Task</button>
                     </div>
+
                 </form>
             </ion-content>
         </ion-modal-view>
