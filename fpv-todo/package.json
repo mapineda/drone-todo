@@ -3,7 +3,10 @@
   "version": "1.1.1",
   "engine": {
     "node": "0.12.7"
-  }
+  },
+  "scripts": {
+    "start": "npm start"
+  },
   "description": "fpv-todo: An Ionic project",
   "dependencies": {
     "express": "^4.13.4",
