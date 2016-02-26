@@ -1,6 +1,9 @@
 {
   "name": "fpv-todo",
   "version": "1.1.1",
+  "engine": {
+    "node": "0.12.7"
+  }
   "description": "fpv-todo: An Ionic project",
   "dependencies": {
     "express": "^4.13.4",
