@@ -1,0 +1,7 @@
+{
+  "name": "fpv-todo",
+  "description": "A simple Inventory app for Premier Drone Racers",
+  "repository": "https://github.com/mapineda/drone-todo",
+  "logo": "http://ionicframework.com/img/ionic-logo-blog.png",
+  "keywords": ["ionic", "static", "drone"]
+}
