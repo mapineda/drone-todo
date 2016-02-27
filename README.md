@@ -32,6 +32,10 @@ Preview the application with 'ionic serve --lab'
 4. Push to the branch: git push origin my-new-feature
 5. Submit a pull request :D
 
+## Issues
+
+Feel free to submit issues as you see them.
+
 ## Contact
 
 hire@marcopineda.com
